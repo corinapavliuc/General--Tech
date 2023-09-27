@@ -1,2 +1,16 @@
  1 уровень сложности: Д/З(Создание и заполнение таблиц можете найти в Discord)
 -- 3. из таблицы Employees вывести всех сотрудников с jobid FIACCOUNT
+
+
+
+
+-- 10. вывести имя, фамилию и зарплату тех сотрудников, у которых зарплата в интервале [8000; 10000] и у них commission_pct не null
+select 
+first_name,
+last_name,
+salary,
+job_id,
+commission_pct
+from Employees
+Where salary  in (8000,10000)
+and commission_pct not null;
